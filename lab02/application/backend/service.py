@@ -1,7 +1,7 @@
 import requests
 from application.db.models import Alumno, CarreraProfesional
 
-URL_REPOSITORY = "https://lab02-repository.onrender.com"
+URL_REPOSITORY = "https://lab02-repository.onrender.com:3001"
 
 class Service:
     def get_list(self, number, career):
