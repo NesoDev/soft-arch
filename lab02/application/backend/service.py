@@ -1,19 +1,19 @@
 import requests
 from application.db.models import Alumno, CarreraProfesional
 
-URL_REPOSITORY = "http://127.0.0.1:3001/"
+URL_REPOSITORY = "https://lab02-repository.onrender.com"
 
 class Service:
     def get_list(self, number, career):
         print("BACKEND: SOLICITUD RECIBIDA")
         
-        res = requests.get(URL_REPOSITORY + 'tables/talumno')
+        res = requests.get(URL_REPOSITORY + '/tables/talumno')
         data = res.json()
         print("DATA alumno RECIBIDA")
         
         alumnos = [Alumno(row[0], row[1], row[2], row[3], row[4], row[5], row[6], row[7], row[8], row[9], row[10]) for row in data["data"]]
 
-        res = requests.get(URL_REPOSITORY + 'tables/tcarreraprofesional')
+        res = requests.get(URL_REPOSITORY + '/tables/tcarreraprofesional')
         data = res.json()
         print("DATA carrera RECIBIDA")
         
