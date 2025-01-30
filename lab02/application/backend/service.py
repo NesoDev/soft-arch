@@ -1,5 +1,5 @@
 import requests
-from utils import Alumno, CarreraProfesional
+from application.db.models import Alumno, CarreraProfesional
 
 URL_REPOSITORY = "http://127.0.0.1:3001/"
 
