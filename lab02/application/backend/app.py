@@ -1,7 +1,7 @@
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 import requests
-from lab02.backend.domain.model import Alumno, CarreraProfesional
+from lab02.backend.db.model import Alumno, CarreraProfesional
 
 app = Flask(__name__)
 CORS(app, resources={r"/*": {"origins": "*"}})
