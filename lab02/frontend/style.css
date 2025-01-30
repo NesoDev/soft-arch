@@ -1,0 +1,159 @@
+*,
+body {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100%;
+    height: 100dvh;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#app {
+    width: 45%;
+    min-width: 400px;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px
+}
+
+#app-head {
+    width: 100%;
+    height: 50px;
+    background: #fff;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+
+#app-head button {
+    border: none;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #5664FF;
+    font-weight: bold;
+    background: none;
+    font-size: 13px;
+}
+#app-head button.active {
+    background: #5664FF;
+    color: #fff;
+}
+
+#app-head button:hover{
+    background: #5664FF;
+    color: #fff;
+}
+
+#app-options {
+    width: 100%;
+    height: 50px;
+    background: #5664FF;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+
+#app-options select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 10px;
+    font-size: 13px;
+    color: #fff;
+    background-color: transparent;
+    padding-left: 20px;
+}
+
+#app-body {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+
+#canvas {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    overflow:scroll;
+}
+
+#text-container  {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 11px;
+    color: #796C6C;
+}
+
+#table {
+    width: 100%;
+    height: 100%;
+    border: none;
+    font-size: 10px;
+    table-layout: fixed;
+}
+
+#table thead th{
+    height: 28.5px;
+    border: 1px solid #E8EAF1;
+    color: #796C6C
+}
+
+#table tbody tr td {
+    border: none;
+    text-align: center;
+    color: #796C6C
+}
+
+#table thead, #table tbody tr {
+    height: 28.5px;
+}
+
+#table tbody tr:nth-child(odd) {
+    background-color: #E8EAF1;
+}
+
+#table tbody tr:nth-child(even) {
+    background-color: #F2F4FB;
+}
+
+#app-footer {
+    width: 90%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#app-footer p {
+    font-size: 13px;
+    color: #7F78A1;
+    text-wrap: wrap;
+    text-align: center;
+}
