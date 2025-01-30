@@ -1,5 +1,5 @@
 let getList = async (listNum, school) => {
-    const url = "https://lab02-backend.onrender.com"
+    const url = "https://lab02-backend.onrender.com:3000"
     try {
         let response;
         console.log("SOLICITANDO LISTA");
